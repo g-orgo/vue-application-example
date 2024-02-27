@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    img {
+        height: 100%;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.75rem;
+    }
+    h4 {
+        font-size: 1.5rem;
+    }
+    h5 {
+        font-size: 1rem;
+    }
+    h6 {
+        font-size: 0.75rem;
+    }
+    ol li {
+        margin-left: 24px;
+    }
+
+    button {
+        @apply bg-white rounded-lg border-2 duration-100 border-gray-300 p-2 transform hover:scale-[101%] hover:brightness-90;
+    }
+    button > p {
+        @apply font-semibold tracking-wider text-black mx-auto;
+    }
+}
